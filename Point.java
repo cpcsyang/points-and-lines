@@ -1,20 +1,29 @@
 public class Point {
     // properties/variables
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
     // constructor: how you create an object of this class
     public Point(int x, int y) {
+        this((double) x, (double) y);
+    }
+
+    public Point() {
+        this(0, 0);
+    }
+
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
+
     // methods/functions
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 

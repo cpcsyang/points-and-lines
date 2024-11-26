@@ -26,6 +26,15 @@ public class Point {
         this.y = y;
     }
 
+    public void translate(int dx, int dy) {
+        x += dx;
+        y += dy;
+    }
+
+    public double distanceTo(int otherX, int otherY) {
+        return Math.sqrt((x - otherX) * (x - otherX) + (y - otherY) * (y - otherY));
+    }
+
     public String toString() {
         return "(" + x + "," + y + ")";
     }
